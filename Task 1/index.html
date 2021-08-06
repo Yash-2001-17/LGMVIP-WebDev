@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LGM</title>
+    <link href="public/img/home folder/favi.png" rel="icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="public/stylesheet/style.css" />
+
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+
+<body>
+    <header id="header" class="fixed-top bg-white">
+        <div class="container d-flex align-items-center justify-content-between">
+            <h3><b>LGM</b></h3>
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav  justify-content-end">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><b>Home</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projects"><b>Projects</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#pricing"><b>Pricing</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#team"><b>Team</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#blog"><b>Blog</b></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact"><b>Contact</b></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="home" class="home mt-5">
+        <div id="carouselExampleCaptions " class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active ">
+                    <img src="public/img/bg folder/bg5.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption img ">
+                        <h1>One page promising to fill all your needs</h1>
+                        <p>This is Photoshop's version of Lorem Ipsum.proin gravids nibh vel velit auctor aliquet</p>
+                        <button type="button" class="btn btn-warning">LEARN MORE</button>
+                        <button type="button" class="btn btn-primary">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="public/img/bg folder/bg4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption img">
+                        <h1>One page promising to fill all your needs</h1>
+                        <p>Some representative placeholder content for the second slide.</p>
+                        <button type="button" class="btn btn-warning">LEARN MORE</button>
+                        <button type="button" class="btn btn-primary">LEARN MORE</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="public/img/bg folder/bg2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption img">
+                        <h1>One page promising to fill all your needs</h1>
+                        <p>Some representative placeholder content for the third slide.</p>
+                        <button type="button" class="btn btn-warning">LEARN MORE</button>
+                        <button type="button" class="btn btn-primary">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="container my-5">
+            <h1 class=" text-center">Welcome to LGM</h1>
+            <div class="row">
+                <div class="col-lg-9 col-md-8">
+                    <div class="container d-inline-flex d-flex p-2 m-2 w">
+                        <p class="des ml-5">
+                            <h4>We are a full service digital marketing,advertising firm worked<br> with plethora of clients all around the world. we are a trusted <br>agency with proven results.LGM is a fierce contender when<br> it comes to the development
+                                and execution.
+                            </h4>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <img src="public/img/home folder/lgm.jpg" alt="" width="50%" class="image">
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex q">
+            <div class="row">
+                <div class="col-md-4 mt-3  col-lg-3 ml-5">
+                    <div class="card mx-5" style="width: 18rem;">
+                        <img src="public/img/home folder/notify.png" class="card-img-top mt-5" alt="..." style="width: 40%;margin: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Notification</h5>
+                            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                <a href="#" class="btn btn-primary my-4 b">LEARN MORE</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 col-lg-3 ml-5">
+                    <div class="card mx-5" style="width: 18rem;">
+                        <img src="public/img/home folder/mail.png" class="card-img-top mt-1" alt="..." style="width: 40%;margin: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">Messaging</h5>
+                            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                <a href="#" class="btn btn-primary my-4 b">LEARN MORE</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mt-3 col-lg-3 ml-5">
+                    <div class="card mx-5" style="width: 18rem;">
+                        <img src="public/img/home folder/doct.png" class="card-img-top mt-2" alt="..." style="width: 40%;margin: auto;">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">CONSECTETURE</h5>
+                            <p class="card-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.
+                                <a href="#" class="btn btn-primary my-4 b">LEARN MORE</a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="projects">
+        <h3 style="text-align:center"> <br><br>Projects</h3>
+        <div class="container bg-light mt-2">
+            <div class="row">
+                <div class="col-lg-3 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/project folder/pro1.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Food Ordering</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/project folder/pro3.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Quinkon Maps</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/project folder/pro2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Assessment</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 mb-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="public/img/project folder/pro4.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Banking</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="btn btn-primary">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 style="text-align:center">Video Projects</h3>
+        </div>
+        <div class="color bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3">
+                        <video width="280" height="240" autoplay muted loop>
+                <source src="public/stylesheet/video folder/travel.mp4" type="video/mp4">
+              </video>
+                    </div>
+                    <div class="col-lg-3">
+                        <video width="280" height="240" autoplay muted loop>
+                <source src="public/stylesheet/video folder/credit.mp4" type="video/mp4">
+              </video>
+                    </div>
+                    <div class="col-lg-3">
+                        <video width="280" height="240" autoplay muted loop>
+                <source src="public/stylesheet/video folder/network.mp4" type="video/mp4">
+              </video>
+                    </div>
+                    <div class="col-lg-3">
+                        <video width="280" height="240" autoplay muted loop>
+                <source src="public/stylesheet/video folder/shop.mp4" type="video/mp4">
+              </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pricing" class="pricing">
+        <h3 style="text-align:center"><br><br>Pricing</h3>
+        <div class="container mt-3 text-center">
+            <div class="row gy-4" data-aos="fade-left">
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="box">
+                        <h3 style="color: #0a0a0a;">Standard Plan</h3>
+                        <div class="price"><span>free</span></div><br>
+                        <p>Basic templates<br>Custom domains<br>1-click automations<br>Marketing CRM</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="box">
+                        <h3 style="color: #0a0a0a;">Business Plan</h3>
+                        <div class="price"><sup>$</sup>19<span> / mo</span></div><br>
+                        <p>All Email templates<br>Custom Branding<br>Event Bassed Automations<br>Phone Support</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="box1">
+                        <h3 style="color: #0a0a0a;">Premium Plan</h3>
+                        <div class="price"><sup>$</sup>14<span> / Month</span></div><br>
+                        <p>Advanced Segmentation<br>Custom branding<br>Advanced audience insights<br>24/7 support</p>
+                        <a href="#" class="btn btn-primary">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team" class="team">
+        <div class="container text-center">
+            <h3 style="text-align:center"><br><br>Our Team</h3>
+            <div class="container text-center">
+                <div class="row  mt-2 ml-5">
+                    <div class="col-lg-4 ml-5 col-md-6 w-25 h-25">
+                        <div class="member">
+                            <img src="public/img/team mem/mem1.png" alt="user profile" class="w-50 h-50 rounded-circle shadow">
+                            <div class="overlay  w-50 h-70 rounded-circle shadow">
+                                <p class="text">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="member-info">
+                                <h4>Sarah Willams</h4>
+                                <span>Chief Executive Officer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ml-4 col-md-6 w-25 h-25">
+                        <div class="member">
+                            <img src="public/img/team mem/mem2.png" alt="user profile" class="w-50 h-50 rounded-circle shadow">
+                            <div class="overlay  w-50 h-70 rounded-circle shadow">
+                                <p class="text">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="member-info">
+                                <h4>Walter White</h4>
+                                <span>Creative Director</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ml-4 col-md-6 w-25 h-25">
+                        <div class="member">
+                            <img src="public/img/team mem/mem3.png" alt="user profile" class="w-50 h-50 rounded-circle shadow">
+                            <div class="overlay  w-50 h-70 rounded-circle shadow">
+                                <p class="text"> <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="member-info">
+                                <h4>Sarah</h4>
+                                <span>Project Manager</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-4 ml-5">
+                    <div class="col-lg-4 ml-5 col-md-6 w-25 h-25">
+                        <div class="member">
+                            <img src="public/img/team mem/mem4.png" alt="user profile" class="w-50 h-50 rounded-circle shadow">
+                            <div class="overlay  w-50 h-70 rounded-circle shadow">
+                                <p class="text">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="member-info">
+                                <h4>John Wilson</h4>
+                                <span>Senior Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ml-4 col-md-6 w-25 h-25">
+                        <div class="member">
+                            <img src="public/img/team mem/mem5.png" alt="user profile" class="w-50 h-50 rounded-circle shadow">
+                            <div class="overlay  w-50 h-70 rounded-circle shadow">
+                                <p class="text">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="member-info">
+                                <h4>Fred Morrison</h4>
+                                <span>Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 ml-4 col-md-6 w-25 h-25">
+                        <div class="member">
+                            <img src="public/img/team mem/mem6.png" alt="user profile" class="w-50 h-50 rounded-circle shadow">
+                            <div class="overlay  w-50 h-70 rounded-circle shadow">
+                                <p class="text">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin"></i></a>
+                                </p>
+                            </div>
+                            <div class="member-info">
+                                <h4>Annie Smith</h4>
+                                <span>Web Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 style="text-align:center"><br>Life in LGM</h2>
+            <div class="life mt-2">
+                <div class="container5">
+                    <div class="mySlides">
+                        <img src="public/img/life grid/work.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="public/img/life grid/celebration.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="public/img/life grid/life3.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="public/img/life grid/life2.png" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+                        <img src="public/img/life grid/life5.jpg" style="width:100%">
+                    </div>
+
+                    <div class="mySlides">
+
+                        <img src="public/img/life grid/life4.jpg" style="width:100%">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">❮</a>
+                    <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="public/img/life grid/work.jpg" style="width:110%" onclick="currentSlide(1)" alt="Work Environment">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="public/img/life grid/celebration.png" style="width:110%" onclick="currentSlide(2)" alt="Celebrations">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="public/img/life grid/life3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Meetings">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="public/img/life grid/life2.png" style="width:115%" onclick="currentSlide(4)" alt="Motivation Sessions">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="public/img/life grid/life5.jpg" style="width:110%" onclick="currentSlide(5)" alt="Team Work">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="public/img/life grid/life4.jpg" style="width:110%" onclick="currentSlide(6)" alt="Events">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- newsletter -->
+            <div class="container1 mt-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <h4>Our Newsletter</h4>
+                        <p>SignUp To Receive Email Updates On Product Announcement,Special Promotions Many More</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="Sign Up">
+                        </form>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary mt-3">Sign In</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="blog">
+        <h3 style="text-align:center"><br><br>Blogs</h3>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="post-box">
+                        <div class="post-img"><img src="public/img/blog folder/blog1.jpg" class="img-fluid" alt=""></div>
+                        <span class="post-date">Tue, September 15</span>
+                        <h4 class="post-title">How job satisfaction survey improves employee retention</h4>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                        <!-- <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="post-box">
+                        <div class="post-img"><img src="public/img/blog folder/blog2.png" class="img-fluid" alt=""></div>
+                        <span class="post-date">Fri, August 28</span>
+                        <h4 class="post-title">The trails and tribulations of hiring a website developer</h4>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                        <!-- <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="post-box">
+                        <div class="post-img"><img src="public/img/blog folder/blog3.jpg" class="img-fluid" alt=""></div>
+                        <span class="post-date">Mon, July 11</span>
+                        <h4 class="post-title">Motivate employees, the key to create a better work environment</h4>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                        <!-- <a href="#" class="readmore stretched-link mt-auto"><span>Read More</span><i class="bi bi-arrow-right"></i></a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact mt-5"><br>
+        <div class="container bg-light" data-aos="fade-up">
+            <div class="row mt-5">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="map">
+                        <img src="public/img/contact-map.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <div class="cont col-lg-6 col-md-6 col-sm-6">
+                    <h2>Contact</h2>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" name="name" class="form-control" id="name" placeholder="Enter your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" name="email" id="email" placeholder=" Enter your Email" required>
+                        </div>
+                    </div>
+                    <div class="mt-3">
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="mt-3">
+                        <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                    <center>
+                        <a href="#" class="btn btn-primary mt-2">Send Message</a>
+                 </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer" class="footer">
+        <div class="footer-top mt-5">
+            <div class="container mt-3">
+                <div class="row ml-4">
+                    <div class="col-lg-4 col-md-6 footer-contact ">
+                        <h5>Office Address</h5>
+                        <p>
+                            S No:1A, Tripura Hills <br> Telapur,Hyderabad<br> India<br><br>
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h5>Follow Us</h5>
+                        <a target="_blank" class="github" href="#"><i class="fab fa-github fa-2x"></i></a>
+                        <!-- <a target="_blank" class="linkedin ml-2" href="#"><i class="fab fa-linkedin fa-2x"></i></a> -->
+                        <a target="_blank" class="twitter" href="#"><i class="fab fa-twitter fa-2x"></i></a><br>
+                        <a target="_blank" class="facebook" href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a target="_blank" class="instagram" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+                        <!-- <a target="_blank" class="google-plus" href="#"><i class="fab fa-skype fa-2x"></i></a> -->
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 footer-links">
+                        <h5>Contact Us</h5>
+                        <strong>Phone:</strong> +91 86693780**<br>
+                        <strong><Email:</strong> yashbobade37@yahoo.com<br>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="text-center">
+                        <div class="copyright">
+                            &copy; Copyright <strong><span>LGM</span></strong>. All Rights Reserved
+                        </div>
+                        <div class="credits">Owner:-<a href=""></a>Yash Bobade</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="public/stylesheet/index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,258 @@
+*:root{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+.img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* Newsletter */
+.container1 {
+    padding: 50px 0;
+    background: #fbfbfc;
+    border-top: 1px solid #e1ecff;
+}
+.container1 form {
+    margin-top: 20px;
+    background: #fff;
+    padding: 6px 10px;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #e1ecff;
+}
+
+.container1 form input[type="email"] {
+    border: 0;
+    padding: 8px;
+    width: calc(100% - 140px);
+}
+
+.container1 form input[type="submit"] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    background: none;
+    font-size: 16px;
+    padding: 0 30px;
+    margin: 3px;
+    background: #4154f1;
+    color: #fff;
+    transition: 0.2s;
+    border-radius: 4px;
+}
+
+.container1 form input[type="submit"]:hover {
+    background: #5969f3;
+}
+
+.box {
+    border-right: 1px solid black;
+}
+
+.pricing {
+    margin: auto;
+}
+
+.pricing .btn:hover {
+    background-color: #5e0786;
+}
+
+
+/* life at pride */
+
+.life {
+    margin: auto;
+    width: 60%;
+    /* height: 50%; */
+}
+
+img {
+    vertical-align: middle;
+}
+
+.container5 {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    top: 0;
+    position: absolute;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Six columns side by side */
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+    opacity: 0.6;
+}
+
+.wid {
+    width: 2px;
+    font-size: 20px;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+
+/* team */
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 25%;
+    right: 0;
+    /* width: 200px;
+    height: 200px; */
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #e9e9eb;
+}
+
+.member:hover .overlay {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text i {
+    font-size: 30px;
+}
+
+
+/* project & home*/
+
+.projects .card-body {
+    background-color: #e1ecffa6;
+}
+
+.projects .card-body:hover {
+    background-color: #c9cc25;
+}
+
+.projects .card-body:hover .btn {
+    background-color: #6d0e92;
+}
+
+.home .card {
+    background-color: #e9eaec;
+}
+
+.home .card:hover {
+    background-color: #c9cc25;
+}
+
+.home .card:hover .btn {
+    background-color: #5e0786;
+}
+
+.contact .cont {
+    background-color: #d5d5f3;
+}
+
+.contact .cont:hover {
+    background-color: #e9e508;
+}
+
+.contact .cont:hover .btn {
+    background-color: #5e0786;
+}
+
+.post-box .btn:hover {
+    background-color: #70baeb;
+}
+
+.contact .map:hover {
+    position: relative;
+    top: -5px;
+    bottom: -5px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color:darkgray;
+    cursor: pointer;
+}
